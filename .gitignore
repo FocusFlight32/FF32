@@ -3,7 +3,6 @@
 
 # Libraries
 *.lib
-*.a
 
 # system Directories
 /Debug
