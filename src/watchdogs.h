@@ -15,6 +15,8 @@
 typedef void (*timeout_fp)(void); /*!< prototype for timeout functions */
 
 int  watchDogRegister(uint32_t*, uint32_t, timeout_fp,int);
-void watchDogsTick();
+void watchDogsTick(void);
 void watchDogDisable(uint32_t);
 void watchDogReset(uint32_t hnd);
+
+///////////////////////////////////////////////////////////////////////////////

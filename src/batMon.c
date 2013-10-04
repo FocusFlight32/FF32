@@ -28,9 +28,9 @@ typedef struct thresholds_t
     batMonCB_t func;
   } thresholds_t ;
 
-void batMonLow();
-void batMonVeryLow();
-void batMonMaxLow();
+void batMonLow(void);
+void batMonVeryLow(void);
+void batMonMaxLow(void);
 
 static const thresholds_t thresholds[] =
   {
@@ -102,7 +102,7 @@ void batMonTick()
 
 ///////////////////////////////////////////////////////////////////////////////
 
-void batMonLow()
+void batMonLow(void)
 {
     // Need to do slow beeping here, push back in telem to flash controller
     // lights, etc.
@@ -114,7 +114,7 @@ void batMonLow()
 
 ///////////////////////////////////////////////////////////////////////////////
 
-void batMonVeryLow()
+void batMonVeryLow(void)
 {
     // Need to do fast beeping here, push back in telem to flash controller
     // lights, etc.
@@ -127,7 +127,7 @@ void batMonVeryLow()
 
 ///////////////////////////////////////////////////////////////////////////////
 
-void batMonMaxLow()
+void batMonMaxLow(void)
 {
     // User isn't listening flyer needs to auto-descend now ....
 

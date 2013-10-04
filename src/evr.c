@@ -93,7 +93,7 @@ void evrBroadcast(evr_t e)
   \brief   Check the EVR queue for unbroadcast EVRs, and broadcast them.
  */
 
-void evrCheck()
+void evrCheck(void)
   {
   while (evrHead != evrTail)
     {
