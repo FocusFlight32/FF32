@@ -1,9 +1,6 @@
 # Object files
 *.o
 
-# Libraries
-*.lib
-
 # system Directories
 /Debug
 /Release
