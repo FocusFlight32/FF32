@@ -50,7 +50,7 @@ char	cdc_RX_ChkChar(void);
 char	cdc_RX_GetChar(void);
 
 /// Waits until Char in RX buf then returns the char and Inc Buf Idx :
-char	cdc_RX_GetWaitChar();
+char	cdc_RX_GetWaitChar(void);
 
 
 #endif /* __USBD_CDC_VCP_H */

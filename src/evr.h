@@ -41,7 +41,7 @@ void evrPush(uint16_t evr, uint16_t reason);
 
 int evrRegisterListener(evrListener_fp f);
 
-void evrCheck();
+void evrCheck(void);
 
 void evrHistory(evrListener_fp);
 

@@ -49,7 +49,7 @@ int watchDogRegister(uint32_t* hnd, uint32_t timeout, timeout_fp func,int sd)
 /*
   \brief  watch dog tick function.
  */
-void watchDogsTick()
+void watchDogsTick(void)
   {
   int i;
 
@@ -82,3 +82,5 @@ void watchDogReset(uint32_t hnd)
   {
   watchDog[hnd].ticks = watchDogTicks;
   }
+
+///////////////////////////////////////////////////////////////////////////////

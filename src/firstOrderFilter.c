@@ -146,7 +146,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-void initFirstOrderFilter()
+void initFirstOrderFilter(void)
 {
     firstOrderFilters[ACCEL500HZ_X_LOWPASS].gx1 = ACCEL500HZ_X_LOWPASS_GX1;
     firstOrderFilters[ACCEL500HZ_X_LOWPASS].gx2 = ACCEL500HZ_X_LOWPASS_GX2;
