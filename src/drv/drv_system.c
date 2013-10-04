@@ -286,7 +286,7 @@ uint32_t millis(void)
 // System Initialization
 ///////////////////////////////////////////////////////////////////////////////
 
-void checkResetType()
+void checkResetType(void)
 {
     uint32_t rst = RCC->CSR;
 
