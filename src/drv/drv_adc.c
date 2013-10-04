@@ -212,7 +212,7 @@ float mxr9150YAxis()
 //  MXR9150 Z Axis
 ///////////////////////////////////////////////////////////////////////////////
 
-float mxr9150ZAxis()
+float mxr9150ZAxis(void)
 {
 	uint8_t i;
 	uint16_t adcSum = 0;
@@ -227,7 +227,7 @@ float mxr9150ZAxis()
 //  Voltage Monitor
 ///////////////////////////////////////////////////////////////////////////////
 
-float voltageMonitor()
+float voltageMonitor(void)
 {
 	return (float)adc2ConvertedValues[ADC_PIN_7_CONVERTED_VALUE];
 }

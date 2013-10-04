@@ -102,7 +102,7 @@ enum frameWatchDogConsts {
 // Decode Channels
 //////////////////////////////////////////////////////////////////////////////
 
-void decodeChannels()
+void decodeChannels(void)
 {
 	channelCnt = 0;
 
@@ -175,7 +175,7 @@ void decodeChannels()
 //  Process SpektrumData
 ///////////////////////////////////////////////////////////////////////////////
 
-void processSpektrumData()
+void processSpektrumData(void)
 {
     if (eepromConfig.slaveSpektrum == true)
     {
@@ -371,7 +371,7 @@ static inline void spektrumParser(uint8_t c, spektrumStateType* spektrumState, b
 //  RC Data Lost Handler
 ///////////////////////////////////////////////////////////////////////////////
 
-void rcDataLost()
+void rcDataLost(void)
 {
     evrPush(EVR_rcDataLost,0);
 
@@ -383,12 +383,12 @@ void rcDataLost()
 //  Spektrum Frame Lost Handlers
 ///////////////////////////////////////////////////////////////////////////////
 
-void primarySpektrumFrameLost()
+void primarySpektrumFrameLost(void)
 {
     evrPush(EVR_primarySpektrumFrameLost,0);
 }
 
-void slaveSpektrumFrameLost()
+void slaveSpektrumFrameLost(void)
 {
     evrPush(EVR_slaveSpektrumFrameLost,0);
 }
@@ -574,7 +574,7 @@ uint16_t spektrumRead(uint8_t channel)
 // Check Spektrum Bind
 ///////////////////////////////////////////////////////////////////////////////
 
-void checkSpektrumBind()
+void checkSpektrumBind(void)
 {
     GPIO_InitTypeDef  GPIO_InitStructure;
 
